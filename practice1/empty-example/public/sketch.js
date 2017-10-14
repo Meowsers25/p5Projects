@@ -2,7 +2,7 @@
 
 function setup() {
   // put setup code here
-  createCanvas(200, 200);
+  createCanvas(600, 600);
 }
 
 function draw() {
