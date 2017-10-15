@@ -21,8 +21,11 @@ function Walker() {
   //this.y = height/2
 
   this.walk = function() {
-    this.pos.x = this.pos.x + random(-10, 10);
-    this.pos.y = this.pos.y + random(-10, 10);
+    //added vector math; replaces lines 27&28; use .add()
+    this.vel = createVector(random(-5, 5), random(-5, 5));
+    this.pos = this.pos.add(this.vel);
+    // this.pos.x = this.pos.x + random(-10, 10);
+    // this.pos.y = this.pos.y + random(-10, 10);
   }
 
   this.display = function() {
