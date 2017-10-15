@@ -14,16 +14,19 @@ function draw() {
 
 //constructor function--constructs walker object
 function Walker() {
-  this.x = width/2;
-  this.y = height/2
+  //create vector-line 18 replaces lines 19, 20
+  //must add .pos (vector object) to the x and y positions
+  this.pos = createVector(width/2, height/2);
+  //this.x = width/2;
+  //this.y = height/2
 
   this.walk = function() {
-    this.x = this.x + random(-10, 10);
-    this.y = this.y + random(-10, 10);
+    this.pos.x = this.pos.x + random(-10, 10);
+    this.pos.y = this.pos.y + random(-10, 10);
   }
 
   this.display = function() {
     fill(255);
-    ellipse(this.x, this.y, 48, 48);
+    ellipse(this.pos.x, this.pos.y, 48, 48);
   }
 }
