@@ -3,7 +3,7 @@ var xoff = 0;
 
 function setup() {
   // put setup code here
-  createCanvas(640, 360);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {

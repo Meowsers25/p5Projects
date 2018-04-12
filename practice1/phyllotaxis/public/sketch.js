@@ -3,7 +3,7 @@ var c = 4;
 
 function setup() {
   // put setup code here
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   colorMode(HSB);
   background(0);

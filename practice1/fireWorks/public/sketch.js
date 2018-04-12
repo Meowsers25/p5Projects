@@ -4,7 +4,7 @@ var gravity;
 
 function setup() {
   // put setup code here
-  createCanvas(400, 300);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
   gravity = createVector(0, 0.2);
 
